@@ -1,0 +1,232 @@
+What is JavaScript ?
+JavaScript is a scripting language. It is object-based scripting language. It is light weighted. It is different from Java language. It is widely used for client side validation.
+
+JavaScript is which type of Language ?
+JavaScript is a object-based scripting language. It is light weighted.
+
+Why we use JavaScript ?
+Using Html we can only design a web page. Using Html we can not run any logic on web browser like addition of two numbers, check any condition, looping statements(for, while), decision making statement(if-else) etc at client side. All these are not possible using Html so for perform all these task at client side we use JavaScript.
+
+Where JavaScript is used ?
+It is used to create interactive websites. It is mainly used for:
+
+Client-side validation
+Dynamic drop-down menus
+Displaying data and time
+Build small but complete client side programs .
+Displaying popup windows and dialog boxes (like alert dialog box, confirm dialog box and prompt dialog box)
+Displaying clocks etc.
+What is the difference between == and ===
+The 3 equal signs (===) mean "equality without type coercion". Using the triple equals, the values must be equal in type as well. It checks for equality as well as the type.
+
+== means simple equal to, it compare two values only. It checks equality only,
+
+Example
+== is equal to 
+=== is exactly equal to (value and type)
+0==false // true 
+0===false // false, because they are of a different type
+1=="1" // true, auto type coercion
+1==="1" // false, because they are of a different type
+How to declare variable in JavaScript ?
+Java script did not provide any data types for declaring variables and a variable in java script can store any type of value. We can use a variable directly without declaring it. Only var keyword are use before variable name to declare any variable.
+
+Syntax
+var x;
+Difference between Window object and document object
+Document object	Window object
+The document object represents the whole html document. When html document is loaded in the browser, it becomes a document object.	The window object represents a window in browser. An object of window is created automatically by the browser.
+What would be the difference if we declare two variables inside a JavaScript, one with 'var' keyword and another without 'var' keyword ?
+The variable with var keyword inside a function is treated as Local variable, and the variable without var keyword inside a function is treated a global variable.
+
+What is a closure in JavaScript ?
+JavaScript allows you to declare a function within another function, and the local variables still can be accessible even after returning from the function you called.
+In other words, a closure is the local variables for a function which is kept alive after the function has returned.
+
+What is uses of Window Object ?
+The window object represents a window in browser. An object of window is created automatically by the browser. It is used to display the popup dialog box such as alert dialog box, confirm dialog box, input dialog box etc.
+
+What is Document Object
+The document object represents the whole html document. When html document is loaded in the browser, it becomes a document object. It is the root element that represents the html document.
+
+Is JavaScript case sensitive ?
+Yes!
+A function getElementById is not the same as getElementbyID
+
+What does "1"+2+3 evaluate to ?
+After a string all the + will be treated as string concatenation operator (not binary +), so the result is 123.
+
+What does 1+2+"5" evaluate to ?
+If there is numeric value before and after +, it is treated is binary + (arithmetic operator), so the result is 35.
+
+Difference between get and post method.
+Http protocol mostly use either get() or post() methods to transfer the request.
+
+Get method	Post method
+1	Request sends the request parameter as query string appended at the end of the request.	Post request send the request parameters as part of the http request body.
+2	Get method is visible to every one (It will be displayed in the address bar of browser ).	Post method variables are not displayed in the URL.
+3	Restriction on form data, only ASCII characters allowed.	No Restriction on form data, Binary data is also allowed.
+4	Get methods have maximum size is 2000 character.	Post methods have maximum size is 8 mb.
+5	Restriction on form length, So URL length is restricted	No restriction on form data.
+6	Remain in browser history.	Never remain the browser history.
+How to create function in JavaScript ?
+Declare a function in JavaScript using function keyword. The keyword function precedes the name of the function.
+
+Syntax
+function function_name()
+{  
+//function body  
+}  
+Read more.......
+
+How to write comment in JavaScript ?
+There are two types of comment are available in JavaScript.
+
+Single Line Comment: It is represented by // (double forward slash)
+Multi Line Comment: It is represented by slash with asterisk symbol as /* write comment here */
+How do we add JavaScript onto a web page?
+There are several way for adding javascript on a web page but there are two way with is commonly used by developers
+
+Between the <body> </body> tag of html (Inline JavaScript)
+Between the <head> </head> tag of html (Internal JavaScript)
+In .js file (External JavaScript)
+Read more .......
+
+How to access the value of a textbox using JavaScript ?
+Example
+<!DOCTYPE html>
+<html>
+<body>
+Name: <input type="text" id="txtname" name="FirstName" value="Porter">
+</body>
+</html>
+There are following way to access the value of the above textbox
+
+Example
+var name = document.getElementById('txtname').value;
+alert(name);
+or 
+we can use the old way
+document.forms[0].mybutton.
+var name = document.forms[0].FirstName.value;
+alert(name);
+Note: This uses the "name" attribute of the element to locate it.
+
+How you will get the CheckBox status whether it is checked or not ?
+Example
+var status = document.getElementById('checkbox1').checked; 
+alert(status); 
+//it will return true or false
+How to create arrays in JavaScript ?
+Example
+var names = new Array(); 
+// Add Elements in Array
+names[0] = "Hina";
+names[1] = "Niki";
+names[2] = "Ram";
+
+// This is second way
+var names = new Array("Hina", "Niki", "Ram");
+If an array with name as "marks" contain three elements then how you will print the third element of this array?
+Example
+Print third array element document.write(marks[2]);
+Note: Array index start with 0
+
+What does the isNaN() function ?
+The isNan() function returns true if the variable value is not a number.
+
+Example
+document.write(isNaN("Hello")+ "<br>");
+document.write(isNaN("2015/04/29")+ "<br>");
+document.write(isNaN(1234)+ "<br>");
+Output
+true
+true
+false
+What is the use of Math Object in Javascript?
+The math object provides you properties and methods for mathematical constants and functions.
+
+Example
+var x = Math.PI; // Returns PI
+var y = Math.sqrt(25); // Returns the square root of 25
+var z = Math.sin(60);    Returns the sine of 60
+How can you submit a form using JavaScript?
+To submit a form using JavaScript use document.form[0].submit();
+
+Does JavaScript support automatic type conversion?
+Yes JavaScript does support automatic type conversion, it is the common way of type conversion used by JavaScript developers.
+
+How can the style/class of an element be changed?
+It can be done in the following way:
+
+Example
+document.getElementById("myText").style.fontSize = "20
+
+or
+
+document.getElementById("myText").className = "anyclass";
+What are all the looping structures in JavaScript?
+For
+While
+do-while loops
+What is called Variable typing in Javascript?
+Variable typing is used to assign a number to a variable and the same variable can be assigned to a string.
+
+Example
+i = 10;
+ 
+i = "string";
+What is the function of delete operator?
+The functionality of delete operator is used to delete all variables and objects in a program but it cannot delete variables declared with VAR keyword.
+
+What are all the types of Pop up boxes available in JavaScript?
+Alert
+Confirm and
+Prompt
+What is the use of Void(0)?
+Void(0) is used to prevent the page from refreshing and parameter "zero" is passed while calling. Void(0) is used to call another method without refreshing the page.
+
+How can a page be forced to load another page in JavaScript?
+The following code has to be inserted to achieve the desired effect:
+
+Example
+<script language="JavaScript" type="text/javascript" >
+
+<location.href="http://newhost/newpath/newfile.html";
+</script>
+What is the difference between an alert box and a confirmation box?
+An alert box displays only one button which is the OK button.
+
+But a Confirmation box displays two buttons namely OK and cancel.
+
+What are the different types of errors in JavaScript?
+There are three types of errors:
+
+Load time errors: Errors which come up when loading a web page like improper syntax errors are known as Load time errors and it generates the errors dynamically.
+Run time errors: Errors that come due to misuse of the command inside the HTML language.
+Logical Errors: These are the errors that occur due to the bad logic performed on a function which is having different operation.
+Which keyword is used to print the text in the screen?
+document.write("Welcome") is used to print the text - Welcome in the screen.
+
+What is the use of blur function?
+Blur function is used to remove the focus from the specified object.
+
+What is the use of typeof operator?
+'Typeof' is an operator which is used to return a string description of the type of a variable.
+
+How to handle exceptions in JavaScript?
+By using Try...Catch--finally keyword handle exceptions in the JavaScript
+
+Example
+try
+{
+code
+}
+catch(exp)
+{
+code to throw an exception
+}
+finally
+{
+code runs either it finishes successfully or after catch
+}
